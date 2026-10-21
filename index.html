@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>santafenm.gov | City of Santa Fe — Website Concept</title>
+<link rel="stylesheet" href="assets/css/site.css">
+
+
+<link crossorigin="" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyo4I6T2i5wP9a+8=" rel="stylesheet"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+<aside aria-label="Emergency communications demonstration" class="emergency-demo-banner" id="emergency-demo-banner" role="region">
+<div class="emergency-demo-inner"><span aria-hidden="true" class="emergency-demo-symbol">!</span><div class="emergency-demo-copy">
+<div class="emergency-demo-label" id="flood-banner-label">DEMONSTRATION ONLY · EMERGENCY ALERT EXAMPLE</div>
+<h2 class="emergency-demo-title" id="flood-banner-title">Flash Flooding: Immediate Safety Alert</h2>
+<p class="emergency-demo-description" id="flood-banner-description">Example emergency message: Avoid flooded roads and arroyos. Never drive through moving water. This is a website demonstration, not an active warning.</p>
+</div><div class="emergency-demo-actions"><a class="emergency-demo-link" href="https://www.ready.gov/floods" id="flood-banner-link" rel="noopener noreferrer" target="_blank">Flood safety information ↗</a><button aria-label="Dismiss demonstration alert" class="emergency-demo-close" id="flood-banner-dismiss" title="Dismiss" type="button">×</button></div></div></aside>
+<header class="nav"><div class="site-identity"><div class="seal-holder"><img alt="City of Santa Fe seal" class="city-seal" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'" src="https://santafenm.gov/uploads/images/logos/santa-fe-seal.png"/><span aria-label="City of Santa Fe" class="seal-fallback">SF</span></div><div class="brand"><small>CITY OF SANTA FE / LA VILLA REAL DE LA SANTA FE</small>santafenm.gov</div></div><div class="header-actions"><nav aria-label="Language / Idioma" class="languages"><button aria-pressed="true" class="lang" data-lang="en">English</button><button aria-pressed="false" class="lang" data-lang="es">Español</button></nav><button aria-controls="menu-panel" aria-expanded="false" aria-label="Open navigation menu" class="menu-trigger" id="menu-trigger" type="button"><span aria-hidden="true" class="hamburger"><span></span><span></span><span></span></span><span class="menu-button-text" id="menu-button-text">Menu</span></button></div></header>
+<nav aria-label="Main navigation" class="site-menu"><div class="menu-panel" hidden="" id="menu-panel"></div></nav>
+<main class="nav-content" hidden="" id="nav-view"></main>
+<div id="home"><section class="hero"><div class="wrap"><div class="eyebrow" id="eyebrow"></div><h1 id="hero-title"></h1><p class="lead" id="hero-lead"></p><form class="search" id="searchform" role="search"><input id="searchinput" type="search"/><button id="searchbtn" type="submit"></button></form><p id="search-status" role="status" style="font-size:13px"></p></div></section><div class="sf-masthead"><div aria-label="Santa Fe community highlights" class="sf-mosaic">
+<button aria-label="Explore civic participation" class="sf-photo sf-feature-link" data-feature-destination="civic" type="button"><div aria-hidden="true" class="sf-art sf-art-a"></div><span class="sf-photo-label" data-en="01 / Get involved" data-es="01 / Participa">01 / Get involved</span><span class="sf-photo-text" data-en="Explore civic participation ↗" data-es="Explora la participación ciudadana ↗">Explore civic participation ↗</span></button>
+<button aria-label="Explore city events" class="sf-photo sf-feature-link" data-feature-destination="events" type="button"><div aria-hidden="true" class="sf-art sf-art-b"></div><span class="sf-photo-label" data-en="02 / What's happening" data-es="02 / Qué está pasando">02 / What's happening</span><span class="sf-photo-text" data-en="Events ↗" data-es="Eventos ↗">Events ↗</span></button>
+<button aria-label="Read city news" class="sf-photo sf-feature-link" data-feature-destination="news" type="button"><div aria-hidden="true" class="sf-art sf-art-c"></div><span class="sf-photo-label" data-en="03 / Stay informed" data-es="03 / Mantente informado">03 / Stay informed</span><span class="sf-photo-text" data-en="News ↗" data-es="Noticias ↗">News ↗</span></button>
+</div><div class="sf-ticker"><span>THE CITY OF SANTA FE <strong> / </strong> NEW MEXICO</span><span data-en="SERVICES / COMMUNITY / GOVERNMENT" data-es="SERVICIOS / COMUNIDAD / GOBIERNO">SERVICES / COMMUNITY / GOVERNMENT</span><span>EST. 1610</span></div></div><main class="main"><section><h2 id="quick-title"></h2><p class="sub" id="quick-sub"></p><div class="quick" id="quicklinks"></div></section><section class="section"><div class="home-services-heading"><h2 id="services-title"></h2></div><p class="sub" id="services-sub"></p><p class="home-directory-cta"><a class="home-services-directory-link" href="#services" id="home-services-directory-link">Services Directory →</a></p><div class="services" id="services"></div></section><section class="section feature"><div><div class="eyebrow" id="feature-label"></div><h2 id="feature-title"></h2><p id="feature-desc"></p><button class="primary" id="feature-btn"></button></div><div aria-hidden="true" class="illustration"><svg style="max-width:280px" viewbox="0 0 260 150" width="100%"><path d="M5 120L58 65L95 92L153 30L255 120" fill="none" stroke="#608c9b" stroke-width="3"></path><path d="M0 142L55 96L89 116L157 58L260 144Z" fill="#a8c8c0"></path><path d="M20 145V110H56V145M70 145V88H116V145M126 145V101H167V145M184 145V81H239V145" fill="#c68d6c" stroke="#875d4b" stroke-width="2"></path><path d="M86 145V116H102V145M202 145V111H220V145" fill="#f3dfb6"></path><circle cx="215" cy="31" fill="#d9ad63" r="17"></circle></svg></div></section><section class="section"><h2 id="help-title"></h2><p class="sub" id="help-desc"></p><button class="outline" id="help-btn"></button></section>
+<section aria-labelledby="news-home-heading" class="home-extras"><div class="extra-head"><div><h2 id="news-home-heading">News &amp; announcements</h2><p class="sub" id="news-home-sub">Updates and important information from your city.</p></div><button class="text-link" id="news-all">All city news →</button></div><div class="tile-grid" id="news-preview"></div></section>
+<section aria-labelledby="things-heading" class="home-extras"><div class="events-banner"><div><div class="eyebrow" id="things-eyebrow">Explore Santa Fe</div><h2 id="things-heading">Things to do</h2><p id="things-desc">Discover community events, activities and opportunities to get involved.</p><button class="primary" id="things-open">Browse city events →</button></div><div aria-hidden="true" style="font-size:70px;color:#12639b">✳</div></div></section>
+<section aria-labelledby="sf-location-hub-title" class="home-extras sf-unified-home sf-location-simple-callout" id="sf-location-hub">
+  <div class="sf-location-callout-content">
+    <div><p class="nav-kicker" data-en="EXPLORE SANTA FE" data-es="EXPLORA SANTA FE">EXPLORE SANTA FE</p>
+      <h2 id="sf-location-hub-title" data-en="City Locations, Parks, and Recreation Centers" data-es="Ubicaciones municipales, parques y centros recreativos">City Locations, Parks, and Recreation Centers</h2>
+      <p class="sub" data-en="Find City facilities, parks, open spaces, and recreation centers in one place." data-es="Encuentra instalaciones municipales, parques, espacios abiertos y centros recreativos en un solo lugar.">Find City facilities, parks, open spaces, and recreation centers in one place.</p>
+    </div>
+    <button class="primary" id="sf-location-explore" type="button" data-en="Explore locations →" data-es="Explorar ubicaciones →">Explore locations →</button>
+  </div>
+</section>
+</main></div>
+<main class="detail" hidden="" id="detail"></main><main class="subpage" hidden="" id="extras-view"></main>
+<footer class="footer"><div class="footgrid"><div><strong id="foot-city"></strong><p id="foot-note"></p></div><div><strong id="foot-services"></strong><p id="foot-service-desc"></p></div><div><strong id="foot-access"></strong><p id="foot-access-desc"></p></div></div></footer>
+<script src="assets/js/script-01.js"></script>
+<script src="assets/js/script-02.js"></script><script src="assets/js/script-03.js"></script><script src="assets/js/script-04.js"></script><script src="assets/js/script-05.js"></script><aside aria-label="Photograph credits" class="sf-photo-credits" style="max-width:1440px;margin:0 auto;padding:12px clamp(20px,4vw,70px);font-size:12px;line-height:1.6;opacity:.85">Santa Fe photographs: <a href="https://commons.wikimedia.org/wiki/File:Santa_Fe_Plaza.jpg" rel="noopener noreferrer" target="_blank">Santa Fe Plaza — Beatrice Murch (CC BY 2.0)</a>; <a href="https://commons.wikimedia.org/wiki/File:Santa_Fe_plaza.JPG" rel="noopener noreferrer" target="_blank">Off the Plaza — Asaavedra32 (CC BY-SA 3.0)</a>; <a href="https://commons.wikimedia.org/wiki/File:Santa_Fe_Plaza_2.jpg" rel="noopener noreferrer" target="_blank">Santa Fe Plaza — Devilstocksoup (CC BY-SA)</a>. Images load from Wikimedia Commons and require internet access.</aside>
+<script src="assets/js/script-06.js"></script><script src="assets/js/script-07.js"></script></body></html>

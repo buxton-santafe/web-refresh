@@ -1,0 +1,7 @@
+
+(()=>{const content={en:{label:'DEMONSTRATION ONLY · EMERGENCY ALERT EXAMPLE',title:'Flash Flooding: Immediate Safety Alert',description:'Example emergency message: Avoid flooded roads and arroyos. Never drive through moving water. This is a website demonstration, not an active warning.',link:'Flood safety information ↗',dismiss:'Dismiss demonstration alert'},es:{label:'SOLO DEMOSTRACIÓN · EJEMPLO DE ALERTA DE EMERGENCIA',title:'Inundaciones repentinas: alerta inmediata',description:'Mensaje de ejemplo: Evite las calles inundadas y los arroyos. Nunca conduzca a través de agua en movimiento. Esta es una demostración del sitio web, no una alerta vigente.',link:'Información de seguridad ante inundaciones ↗',dismiss:'Cerrar alerta de demostración'}};
+function render(language){const c=content[language]||content.en;for(const key of ['label','title','description','link']){const node=document.getElementById('flood-banner-'+key);if(node)node.textContent=c[key]}document.getElementById('flood-banner-dismiss')?.setAttribute('aria-label',c.dismiss)}
+document.getElementById('flood-banner-dismiss')?.addEventListener('click',()=>{document.getElementById('emergency-demo-banner').hidden=true});
+document.querySelectorAll('[data-lang]').forEach(button=>button.addEventListener('click',()=>render(button.getAttribute('data-lang'))));
+render(document.querySelector('[data-lang][aria-pressed="true"]')?.getAttribute('data-lang')||'en');
+})();

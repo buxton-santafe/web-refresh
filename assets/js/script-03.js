@@ -1,0 +1,1 @@
+document.querySelectorAll("[data-lang]").forEach(b=>b.addEventListener("click",()=>document.querySelectorAll(".sf-masthead [data-en]").forEach(e=>e.textContent=e.dataset[b.dataset.lang])));
